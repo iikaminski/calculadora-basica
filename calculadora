@@ -1,0 +1,19 @@
+while True:
+    primeiro = float(input("Digite o primeiro número: "))
+    operacao = input("Digite o tipo da operação matemática (soma, sub, mult, div): ")
+    segundo = float(input("Digite o segundo número: "))
+    if operacao == "soma":
+        resultado = float(int(primeiro) + int(segundo))
+        MS = resultado
+    elif operacao == "sub":
+        resultado = float(int(primeiro) - int(segundo))
+        MS = resultado
+    elif operacao == "mult":
+        resultado = float(int(primeiro) * int(segundo))
+        MS = resultado
+    elif operacao == "div":
+        resultado = float(int(primeiro) / int(segundo))
+        MS = resultado
+    else:
+        resultado = "Erro na operação"
+    print("O resultado da operacao é: " + str(resultado))
